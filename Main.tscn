@@ -783,3 +783,6 @@ position = Vector2(144, 159)
 
 [node name="zombie" parent="." instance=ExtResource("4_cm0pq")]
 position = Vector2(1043, 516)
+chase = null
+speed = null
+alive = null

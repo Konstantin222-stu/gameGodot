@@ -55,3 +55,28 @@ func _on_damage_body_entered(body: Node2D) -> void:
 	if body.name == "player":
 		var direction1 = (body.position - self.position).normalized()
 		
+		
+		
+
+
+
+
+
+
+
+func _on_death_body_entered(body: Node2D) -> void:
+	
+	if body.name == "player":
+		body.velocity.y -= 505
+		death()
+
+func death():
+	alive = false
+	anim.play("Die")
+	await anim.animation_finished
+	queue_free()
+
+
+func _on_damage_body_entered(body: Node2D) -> void:
+	if body.name == "player":
+		var direction1 = (body.position - self.position).normalized()
