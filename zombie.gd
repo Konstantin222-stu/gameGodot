@@ -54,14 +54,4 @@ func death():
 func _on_damage_body_entered(body: Node2D) -> void:
 	if body.name == "player":
 		var direction1 = (body.position - self.position).normalized()
-		var knockback_power = 1000
 		
-		# Добавляем небольшой случайный разброс по X (например, от -0.2 до 0.2)
-		var random_factor = randf_range(-0.2, 0.2)
-		direction1.x += random_factor
-		
-		# Нормализуем снова, чтобы сохранить общую силу
-		direction1 = direction1.normalized()
-		
-		body.velocity.x = direction1.x * knockback_power
-		body.velocity.y = -abs(direction1.y) * knockback_power
