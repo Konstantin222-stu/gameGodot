@@ -1,0 +1,170 @@
+[gd_scene load_steps=31 format=3 uid="uid://cml12c147lell"]
+
+[ext_resource type="Script" uid="uid://cyye34g5o51rk" path="res://zombie.gd" id="1_iadna"]
+[ext_resource type="Texture2D" uid="uid://beaihliok7egj" path="res://sprite/Archive/die/die_1.png" id="2_kxbtl"]
+[ext_resource type="Texture2D" uid="uid://csw4trl0rt202" path="res://sprite/Archive/die/die_2.png" id="3_ayqsr"]
+[ext_resource type="Texture2D" uid="uid://dwhpr85w6n61h" path="res://sprite/Archive/die/die_3.png" id="4_b1usl"]
+[ext_resource type="Texture2D" uid="uid://ctqcljnemt43j" path="res://sprite/Archive/die/die_4.png" id="5_o2vho"]
+[ext_resource type="Texture2D" uid="uid://c8002dkhpqe5e" path="res://sprite/Archive/die/die_5.png" id="6_p12lm"]
+[ext_resource type="Texture2D" uid="uid://x2exidvef30b" path="res://sprite/Archive/die/die_6.png" id="7_fiavj"]
+[ext_resource type="Texture2D" uid="uid://by6e1uepg4qus" path="res://sprite/Archive/die/die_7.png" id="8_5w78j"]
+[ext_resource type="Texture2D" uid="uid://b2xrmyb5mdl5i" path="res://sprite/Archive/die/die_8.png" id="9_6xcvb"]
+[ext_resource type="Texture2D" uid="uid://bqyjnefmuysg1" path="res://sprite/Archive/idle/idle_1.png" id="10_s5wjl"]
+[ext_resource type="Texture2D" uid="uid://dv562lgxanw1m" path="res://sprite/Archive/idle/idle_2.png" id="11_w25mp"]
+[ext_resource type="Texture2D" uid="uid://dpmnny8xjhiui" path="res://sprite/Archive/idle/idle_3.png" id="12_ftyqa"]
+[ext_resource type="Texture2D" uid="uid://ce1jnmr7l1ed8" path="res://sprite/Archive/idle/idle_4.png" id="13_y11l5"]
+[ext_resource type="Texture2D" uid="uid://33uecmfmew63" path="res://sprite/Archive/idle/idle_5.png" id="14_ipde4"]
+[ext_resource type="Texture2D" uid="uid://kwd5mdy0dxn2" path="res://sprite/Archive/idle/idle_6.png" id="15_5hfww"]
+[ext_resource type="Texture2D" uid="uid://7dawc332fens" path="res://sprite/Archive/walk/go_1.png" id="16_u1aqy"]
+[ext_resource type="Texture2D" uid="uid://bmgtitgwxsgsy" path="res://sprite/Archive/walk/go_2.png" id="17_hcsjy"]
+[ext_resource type="Texture2D" uid="uid://ugnkta2ec7sc" path="res://sprite/Archive/walk/go_3.png" id="18_ud40w"]
+[ext_resource type="Texture2D" uid="uid://dg5axu1pve51n" path="res://sprite/Archive/walk/go_4.png" id="19_trdby"]
+[ext_resource type="Texture2D" uid="uid://dfdn38hwaa4ct" path="res://sprite/Archive/walk/go_5.png" id="20_maxkh"]
+[ext_resource type="Texture2D" uid="uid://bn7tj1p3blxl0" path="res://sprite/Archive/walk/go_6.png" id="21_t6dee"]
+[ext_resource type="Texture2D" uid="uid://ts8udg8um0q7" path="res://sprite/Archive/walk/go_7.png" id="22_ovsvr"]
+[ext_resource type="Texture2D" uid="uid://dc6irgeplltxr" path="res://sprite/Archive/walk/go_8.png" id="23_t3gwa"]
+[ext_resource type="Texture2D" uid="uid://do3xgsawubaf0" path="res://sprite/Archive/walk/go_9.png" id="24_jsthx"]
+[ext_resource type="Texture2D" uid="uid://cc3jt7exdb1mg" path="res://sprite/Archive/walk/go_10.png" id="25_32baa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iadna"]
+size = Vector2(187, 301)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4bvgc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_kxbtl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ayqsr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_b1usl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_o2vho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_p12lm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fiavj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5w78j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_6xcvb")
+}],
+"loop": false,
+"name": &"Die",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_s5wjl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_w25mp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ftyqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_y11l5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ipde4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_5hfww")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_u1aqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_hcsjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ud40w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_trdby")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_maxkh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_t6dee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ovsvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_t3gwa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_jsthx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_32baa")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 14.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iadna"]
+radius = 2786.65
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kxbtl"]
+size = Vector2(29, 5.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ayqsr"]
+size = Vector2(57, 75)
+
+[node name="zombie" type="CharacterBody2D"]
+script = ExtResource("1_iadna")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, -0.5)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("RectangleShape2D_iadna")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_4bvgc")
+animation = &"Idle"
+autoplay = "Idle"
+
+[node name="Detector" type="Area2D" parent="."]
+scale = Vector2(0.3, 0.3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detector"]
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_iadna")
+
+[node name="death" type="Area2D" parent="."]
+
+[node name="die" type="CollisionShape2D" parent="death"]
+position = Vector2(1, -47.25)
+shape = SubResource("RectangleShape2D_kxbtl")
+debug_color = Color(0.925979, 4.07186e-05, 0.67417, 0.42)
+
+[node name="damage" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="damage"]
+position = Vector2(-1.5, 7.5)
+shape = SubResource("RectangleShape2D_ayqsr")
+debug_color = Color(0.989415, 0, 0.290723, 0.42)
+
+[connection signal="body_entered" from="Detector" to="." method="_on_detector_body_entered"]
+[connection signal="body_exited" from="Detector" to="." method="_on_detector_body_exited"]
+[connection signal="body_entered" from="death" to="." method="_on_death_body_entered"]
+[connection signal="tree_entered" from="death/die" to="." method="_on_die_tree_entered"]
+[connection signal="body_entered" from="damage" to="." method="_on_damage_body_entered"]
