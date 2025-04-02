@@ -41,7 +41,7 @@ func _on_detector_body_exited(body: Node2D) -> void:
 func _on_death_body_entered(body: Node2D) -> void:
 	
 	if body.name == "player":
-		body.velocity.y -= 500
+		body.velocity.y -= 505
 		death()
 
 func death():
