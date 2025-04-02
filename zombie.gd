@@ -56,9 +56,7 @@ func _on_damage_body_entered(body: Node2D) -> void:
 		var direction1 = (body.position - self.position).normalized()
 		
 		
-func _on_damage_body_entered(body: Node2D) -> void:
-	if body.name == "player":
-		var direction1 = (body.position - self.position).normalized()		
+	
 
 
 
